@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yeni Tarif Ekle</title>
+    
+</head>
+<body>
+    <h1>Yeni Tarif Ekle</h1>
+
+    {% if hata_mesajlari %}
+        <div class="error-message">
+            <ul>
+            {% for mesaj in hata_mesajlari %}
+                <li>{{ mesaj }}</li>
+            {% endfor %}
+            </ul>
+        </div>
+    {% endif %}
+
+    <form action="{{ url_for('tarif_ekle') }}" method="POST">
+        <label for="isim">Tarif İsmi:</label>
+        <input type="text" id="isim" name="isim" placeholder="Tarif ismini girin">
+
+        <label for="malzemeler">Malzemeler (virgülle ayırın):</label>
+        <input type="text" id="malzemeler" name="malzemeler" placeholder="Örneğin: şeker, un, süt">
+
+        <label for="yapilis">Tarifin Yapılışı:</label>
+        <textarea id="yapilis" name="yapilis" rows="4" placeholder="Tarifin yapılışını buraya yazın"></textarea>
+
+        <button type="submit">Tarifi Ekle</button>
+    </form>
+</body>
+</html>

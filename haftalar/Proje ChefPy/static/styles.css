@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2a599c;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 145vh;
+    flex-direction: column;
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #2a599c;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #2878a7;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+button:hover {
+    background-color: #213b88;
+}
+
+.message {
+    color: #d9534f;
+}
+
+.tarif-list {
+    list-style: none;
+    padding: 0;
+}
+
+.tarif-list li {
+    margin-bottom: 10px;
+}
+
+.tarif-list a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.tarif-list a:hover {
+    text-decoration: underline;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+
+.team-section {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.team-section h2 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.team-member {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+}
+
+.team-member img {
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.team-member p {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Logo Stil */
+.logo {
+    position: absolute;
+    top: 2px;
+    left: 400px;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+}
+.logo2 {
+    position: absolute;
+    top: 2px;
+    left: 950px;
+}
+
+.logo2 img {
+    width: 150px;
+    height: auto;
+}
